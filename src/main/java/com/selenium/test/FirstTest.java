@@ -20,6 +20,7 @@ public class FirstTest {
         
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
+        options.setBinary("/usr/bin/chromium-browser");
         
         
 		WebDriver driver = new ChromeDriver(options);
