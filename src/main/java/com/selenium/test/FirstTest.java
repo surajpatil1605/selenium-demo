@@ -17,6 +17,11 @@ public class FirstTest {
 	public void testComponents() {
 		ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless"); // Add this line to run in headless mode
+        
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        
+        
 		WebDriver driver = new ChromeDriver(options);
         driver.get("https://www.selenium.dev/selenium/web/web-form.html");
 
